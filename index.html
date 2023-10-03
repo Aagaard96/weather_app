@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="weather.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="card__search">
+            <input class="card__searchInput" type="text" placeholder="Indtast Bynavn" spellcheck="false">
+            <button class="card__searchButton"><img class="card__searchButtonImg" src="images/search.png"
+                    alt="Søg her"></button>
+        </div>
+        <div class="searchError">
+            <p>By findes ikke..</p>
+        </div>
+        <div class="card__weather">
+            <img class="card__weatherImg" src="images/drizzle.png" alt="">
+            <h1 class="card__weatherTemp"></h1>
+            <h2 class="card__weatherCity"></h2>
+            <div class="card__weatherDetails">
+                <div class="card__weatherDetailsCol">
+                    <img class="card__weatherDetailsImg" src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="card__weatherDetailsCol">
+                    <img class="card__weatherDetailsImg" src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
